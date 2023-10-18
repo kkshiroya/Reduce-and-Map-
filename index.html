@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reduce and Map </title>
+</head>
+
+<body>
+</body>
+<script>
+    // 1.
+    var arr1 = [1, 2, 3, 4, 5, 6, 7, 8];
+    var result1 = arr1
+        .map(k => k * 2)
+        .reduce((total, k) => total * k, 5)
+    console.log(result1, 'result1');
+
+    // 2.
+    var arr2 = [2, 4, 6, 8, 10];
+    var result2 = arr2
+        .map(r => r + 1)
+        .reduce((total, r) => total + r, 0)
+    console.log(result2, 'result2');
+
+    // 3.
+    var arr3 = [4, 10, 5, 2];
+    var result3 = arr3
+        .map(u => u - 2)
+        .reduce((total, u) => total - u, 2)
+    console.log(result3, 'result3');
+
+    // 4.
+    var arr4 = [5, 3, 8, 10, 2, 1];
+    var result4 = arr4
+        .map(s => s + 2)
+        .reduce((total, s) => total + s, 0)
+    console.log(result4, 'result4');
+
+    // 5.
+    var arr5 = [6, 10];
+    var result5 = arr5
+        .map(a => a * 2)
+        .reduce((total, a) => total * a, 1)
+    console.log(result5, 'result5');
+
+    // 6.
+    var arr6 = [8, 7, 6, 5, 4, 3, 2, 1];
+    var result6 = arr6
+        .map(l => l * 1)
+        .reduce((total, l) => total - l, 100)
+    console.log(result6, 'result6');
+
+    // 7.
+    var arr7 = [4, 6, 7, 5, 8, 9, 6];
+    var result7 = arr7
+        .map(a => a + 1)
+        .reduce((total, a) => total + a, 1)
+    console.log(result7, 'result7');
+
+    // 8.
+    var arr8 = [1, 9, 3, 4, 5, 6, 7, 2];
+    var result8 = arr8
+        .map(b => b - 2)
+        .reduce((total, b) => total + b, 3)
+    console.log(result8, 'result8');
+
+    // 9.
+    var arr9 = [5, 9, 8, 10];
+    var result9 = arr9
+        .map(c => c + 9)
+        .reduce((total, c) => total - c, 9)
+    console.log(result9, 'result9');
+
+    // 10.
+    var arr10 = [3, 6, 9, 5, 2, 1, 7, 8, 4];
+    var result10 = arr10
+        .map(d => d * 10)
+        .reduce((total, d) => total - d, 2)
+    console.log(result10, 'result10');
+
+    // 11.
+    var arr11 = [2, 5, 2, 8, 9, 2];
+    var result11 = arr11
+        .map(e => e + 6)
+        .reduce((total, e) => total + e, 5)
+    console.log(result11, 'result11');     
+</script>
+
+</html>
